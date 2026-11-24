@@ -5,19 +5,17 @@ import { ParticlesBackground } from "../ParticlesBackground";
 
 export const Home = () => {
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      {/* Purple gradient background */}
+    <section id="home" className="min-h-screen relative overflow-hidden">
       <div className="absolute inset-0 bg-linear-to-br from-portfolio-purple via-background to-background -z-20" />
       
-      {/* Particles */}
       <ParticlesBackground />
 
-      {/* Floating Icons */}
       <motion.div
         animate={{
           y: [0, -20, 0],
           rotate: [0, 10, 0],
         }}
+
         transition={{
           duration: 6,
           repeat: Infinity,
@@ -91,7 +89,7 @@ export const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-portfolio-blue via-portfolio-cyan to-portfolio-purple bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-8xl font-bold mb-6 bg-linear-to-r from-portfolio-blue via-portfolio-cyan to-portfolio-purple bg-clip-text text-transparent">
                 M.Logeshwaran
               </h1>
               <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6">
@@ -137,6 +135,6 @@ export const Home = () => {
       >
         <ChevronDown className="w-8 h-8 text-muted-foreground" />
       </motion.div>
-    </div>
+    </section>
   );
 };

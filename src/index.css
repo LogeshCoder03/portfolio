@@ -4,10 +4,6 @@
 All colors MUST be HSL.
 */
 
-/* *{
-  color: white;
-} */
-
 :root {
     --background: 220 26% 14%;
     --foreground: 210 40% 98%;
